@@ -1,0 +1,51 @@
+body{
+    background-color: 	#E8E5DF;
+}
+.navegar{
+background-image: url('https://goduxy.com/wp-content/uploads/2026/03/identificacao-de-plantas-2.jpeg');}
+#titulo_principal{
+    position: absolute;
+    left: 140px;
+    top: 5px;
+}
+#titulo2{
+    position: absolute;
+    top: 200px;
+    left: 150px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: anchor-center;
+    padding: 80px;
+}
+.opciones{
+    display: flex;
+    justify-content: space-evenly;
+}
+.opciones a{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    position: relative;
+    left: 100px;
+}
+#explorar{
+    position: absolute;
+    left: 280px;
+    bottom: 120px;
+    background-color: green;
+    color: white;
+    width: 150px;
+    height: 35px;
+    border: 1px white;
+    transition-duration: 500ms, 500ms;
+    transition-timing-function: ease-in-out;
+    
+}
+#explorar:hover{
+    width: 200px;
+    height: 40px;
+
+}
+
