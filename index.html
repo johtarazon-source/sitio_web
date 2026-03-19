@@ -1,30 +1,153 @@
 <!DOCTYPE html>
+<!-- Página principal: Flores del Hogar -->
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mundo Verde</title>
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flores del Hogar | Decoración con flores</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animaciones.css" />
 </head>
 <body>
-    <header class="menu">
-        <div class="logo">MUNDO VERDE - PLANTAS</div>
-        <nav class="opciones">
-            <h1 id="titulo_principal">
-                MUNDO VERDE - PLANTAS
-            </h1>
-            <a href="#">Inicio</a>
-            <a href="#">Tipos de Plantas</a>
-            <a href="#">Cuidados</a>
-            <a href="#">Importancia</a>
-            <a href="#">Contacto</a>
+  <div class="page">
+    <!-- Encabezado y navegación -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Ir a la página principal">
+          <span class="brand-mark" aria-hidden="true">✿</span>
+          <span class="brand-text">Flores del Hogar</span>
+        </a>
+
+        <nav class="nav" aria-label="Menú principal">
+          <a class="nav-link" href="index.html" aria-current="page">Inicio</a>
+          <a class="nav-link" href="catalogo.html">Catálogo</a>
+          <a class="nav-link" href="decoracion.html">Decoración</a>
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+          <a class="nav-link nav-cta" href="contacto.html">Contacto</a>
         </nav>
+      </div>
     </header>
-    <section class="navegar">
-        <h1>
-            Descubre el mundo de las plantas
-        </h1>
-        <button id="explorar" type="button">EXPLORAR</button>
-    </setion>
+
+    <!-- Hero / Bienvenida -->
+    <main class="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 class="title">Transforma tu hogar con flores decorativas</h1>
+            <p class="subtitle">
+              Arreglos modernos, colores suaves y detalles que elevan cualquier espacio.
+              Descubre nuestro catálogo y crea una atmósfera elegante con naturaleza.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="catalogo.html">Ver flores</a>
+              <a class="btn btn-ghost" href="decoracion.html">Ideas de decoración</a>
+            </div>
+
+            <ul class="hero-benefits" aria-label="Beneficios">
+              <li>Diseños para sala, mesa y dormitorio</li>
+              <li>Estilo pastel y tonos verdes</li>
+              <li>Envíos y encargos por temporada</li>
+            </ul>
+          </div>
+
+          <div class="hero-media" aria-hidden="true">
+            <!-- Imagen principal (placeholder) -->
+            <img
+              class="hero-image fade-in"
+              src="https://www.florespedia.com/Imagenes/flores-bonitas.jpg"
+              alt="Arreglo de flores decorativas"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección destacada de productos -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Productos destacados</h2>
+            <p class="section-desc">
+              Combina fragancias, texturas y colores que se ven increíbles en casa.
+            </p>
+          </div>
+
+          <div class="grid cards">
+            <!-- Card 1 -->
+            <article class="card fade-in" style="--delay: 0ms;">
+              <a href="https://www.etsy.com/es/listing/1770533722/arreglo-floral-de-saten-rosa-suave-en" target="_blank" rel="noopener">
+                <img
+                  src="https://www.etsy.com/es/listing/1770533722/arreglo-floral-de-saten-rosa-suave-en"
+                  alt="Ramo rosado"
+                />
+              </a>
+              <div class="card-body">
+                <h3>Ramo Rosado Suave</h3>
+                <p class="price">$29.900</p>
+                <p class="muted">Ideal para mesa de centro y entradas.</p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-small btn-primary" href="catalogo.html">Agregar idea</a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card fade-in" style="--delay: 80ms;">
+              <img
+                src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3582442193706127537"
+                alt="Arreglo blanco"
+              />
+              <div class="card-body">
+                <h3>Arreglo Blanco & Verde</h3>
+                <p class="price">$35.500</p>
+                <p class="muted">Limpio, moderno y con sensación fresca.</p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-small btn-primary" href="catalogo.html">Agregar idea</a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card fade-in" style="--delay: 160ms;">
+              <img
+                src="https://enflores.com/403-large_default/bouquet-de-flores-tonos-pastel.jpg"
+                alt="Bouquet multicolor"
+              />
+              <div class="card-body">
+                <h3>Bouquet Pastel</h3>
+                <p class="price">$42.000</p>
+                <p class="muted">Colores suaves para dormitorios y salas.</p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-small btn-primary" href="catalogo.html">Agregar idea</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA final -->
+      <section class="cta">
+        <div class="container cta-inner">
+          <div>
+            <h2 class="cta-title">¿Quieres un arreglo a tu estilo?</h2>
+            <p class="cta-desc">
+              Cuéntanos qué ambiente quieres crear y te sugerimos una combinación perfecta.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="contacto.html">Escríbenos</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">
+          © 2026 Flores del Hogar. Diseñado para inspirar.
+        </p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
 

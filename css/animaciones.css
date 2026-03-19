@@ -1,0 +1,53 @@
+/* animaciones.css - Animaciones y transiciones (solo CSS) */
+
+/* =========================
+   Animación de aparición (fade-in)
+========================= */
+.fade-in {
+  animation: fadeIn 700ms ease both;
+  animation-delay: var(--delay, 0ms);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   Transiciones / hover (suaves)
+========================= */
+.nav-link {
+  transition: background 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.btn {
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease,
+    border-color 180ms ease;
+}
+
+.hero-image {
+  transition: transform 350ms ease;
+}
+
+.card {
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.card img {
+  transition: transform 320ms ease;
+}
+
+.mini-card {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+input, textarea {
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+

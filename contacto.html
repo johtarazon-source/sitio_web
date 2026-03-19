@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Formulario y datos de contacto -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto | Flores del Hogar</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animaciones.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Ir a la página principal">
+          <span class="brand-mark" aria-hidden="true">✿</span>
+          <span class="brand-text">Flores del Hogar</span>
+        </a>
+
+        <!-- Menú de navegación -->
+        <nav class="nav" aria-label="Menú principal">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="catalogo.html">Catálogo</a>
+          <a class="nav-link" href="decoracion.html">Decoración</a>
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+          <a class="nav-link nav-cta" href="contacto.html" aria-current="page">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <div class="container">
+          <!-- Grilla: formulario + datos de contacto -->
+          <div class="contact-grid">
+            <!-- Formulario -->
+            <div class="form fade-in" style="--delay: 0ms;">
+              <div class="form-head">
+                <h2>Escríbenos</h2>
+                <p>
+                  Cuéntanos tu idea y te sugerimos un arreglo con colores suaves y estilo moderno.
+                </p>
+              </div>
+
+              <!-- Nota: botón y formulario solo para diseño (sin lógica JS). -->
+              <form action="#" method="post" aria-label="Formulario de contacto">
+                <div class="field">
+                  <label for="nombre">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+                </div>
+
+                <div class="field">
+                  <label for="correo">Correo</label>
+                  <input id="correo" name="correo" type="email" placeholder="tu@email.com" required />
+                </div>
+
+                <div class="field">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje" placeholder="Ej: necesito un arreglo para sala..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button class="btn btn-primary" type="submit">Enviar (diseño)</button>
+                  <a class="btn btn-ghost" href="catalogo.html">Volver al catálogo</a>
+                </div>
+              </form>
+            </div>
+
+            <!-- Datos de contacto -->
+            <aside class="contact-aside fade-in" style="--delay: 120ms;">
+              <h3>Datos de contacto</h3>
+              <div class="info-list">
+                <div class="info-item">
+                  <strong>Teléfono</strong>
+                  <span class="muted">+56 9 1234 5678</span>
+                </div>
+
+                <div class="info-item">
+                  <strong>Dirección</strong>
+                  <span class="muted">Av. de las Flores 123, Ciudad</span>
+                </div>
+
+                <div class="info-item">
+                  <strong>Horario</strong>
+                  <span class="muted">Lun - Sáb: 10:00 a 19:00</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 14px;">
+                <p class="muted">
+                  Si tienes una referencia (foto o color), adjúntala en tu mensaje y te ayudamos a
+                  elegir la mejor combinación.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">© 2026 Flores del Hogar. Diseñado para inspirar.</p>
+        <p class="muted" aria-hidden="true">✿ Contacto por diseño</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
