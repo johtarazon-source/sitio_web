@@ -8,6 +8,8 @@ body{
     background: 	#EaE7DF;
 }
 .navegar{
+    border-radius: 1px;
+    border: 3px solid black;
     height: 98dvh;
     background-image: url("https://wallpapers.com/images/featured/plant-pictures-9qi3g6bc9ld8q9t3.jpg");
     background-size: cover;
@@ -52,6 +54,9 @@ body{
 }
 .opciones a:hover{
     color: #63a065;
+    animation-timing-function: ease-in-out;
+    animation-duration: 500ms;
+    animation-delay: 1s;
 }
 #explorar{
     padding: 10px 25px;
@@ -60,7 +65,9 @@ body{
     color: white;
     font-size: 16px;
     cursor: pointer;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms 500ms;
+    transition-delay: 500ms;
 }
 #explorar:hover{
     background: #1b5e20;
