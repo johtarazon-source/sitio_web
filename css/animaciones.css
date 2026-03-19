@@ -1,8 +1,4 @@
-/* animaciones.css - Animaciones y transiciones (solo CSS) */
 
-/* =========================
-   Animación de aparición (fade-in)
-========================= */
 .fade-in {
   animation: fadeIn 700ms ease both;
   animation-delay: var(--delay, 0ms);
@@ -19,9 +15,6 @@
   }
 }
 
-/* =========================
-   Transiciones / hover (suaves)
-========================= */
 .nav-link {
   transition: background 200ms ease, color 200ms ease, transform 200ms ease;
 }
